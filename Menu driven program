@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main()
+{
+    int i,fact=1,sum,sen,odd,n;
+    printf("enter the case whivh you want
+            Case 1-factorial \n
+            case 2- odd/even \n
+            case 3- prime \n")
+    switch(i):
+    { 
+        case 1: 
+        printf("enter the  number");
+        scanf("%d"&n);
+        fact=1;
+        for(i=1;i<=n;i++)
+        fact=fact*i;
+        printf("factorial of number%d="fact);
+        break;
+        
+        case 2:
+        printf("enter the  number");
+        scanf("%d"&n);
+        if(n%2==0)
+        printf("no. is even");
+        else
+        printf("no. is odd");
+        break;
+        
+        case 3:
+        printf("enter the  number");
+        scanf("%d"&n);
+        for(i=2;i<=n;i++)
+        {
+            if(n%i==0)
+                {
+                    printf("number is not a prime number");
+                }
+        }
+        if(i==n)
+          printf("numberr is prime number");
+        break;
+     
+
+   }
